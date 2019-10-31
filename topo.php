@@ -18,7 +18,6 @@ $plaatsen = array(
 foreach($plaatsen as $quiz => $answer) {
     echo "> What is $quiz's capital" . PHP_EOL;
     $input = readline("> ");
-    $plaatsen[$answer] = $input;
     if ($input === $answer){
         echo "> $input is correct!" . PHP_EOL;
         $goed[] = $answer;
